@@ -1,7 +1,7 @@
-from lib.models import Dog
+from models import Dog
 
 class TestModels:
-    '''lib/models.py'''
+    '''models.py'''
 
     def test_has_name_and_breed_attributes(self):
         '''contains model "Dog" with dog_name and dog_breed attributes.'''

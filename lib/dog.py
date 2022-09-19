@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 
-from lib.models import Dog
+from models import Dog
 
 engine = create_engine('sqlite:///:memory:')
 
