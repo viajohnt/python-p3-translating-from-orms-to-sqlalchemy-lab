@@ -13,7 +13,7 @@ from dog import (
 from models import Base, Dog
 
 class TestDog:
-    '''lib/dog.py'''
+    '''app/dog.py'''
 
     engine = create_table(Base)
     Session = sessionmaker(engine)
