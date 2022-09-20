@@ -7,6 +7,7 @@ Base = declarative_base()
 
 class Dog(Base):
     __tablename__ = 'dogs'
+<<<<<<< HEAD:lib/models.py
 <<<<<<< HEAD
     __table_args__ = (PrimaryKeyConstraint('id'),)
 
@@ -20,3 +21,10 @@ class Dog(Base):
     dog_name = Column(String())
     dog_breed = Column(String())
 >>>>>>> bbae1be (re-re-add solution)
+=======
+    __table_args__ = (PrimaryKeyConstraint('id'),)
+
+    id = Column(Integer())
+    name = Column(String())
+    breed = Column(String())
+>>>>>>> b1d5e75 (rename columns):app/models.py
