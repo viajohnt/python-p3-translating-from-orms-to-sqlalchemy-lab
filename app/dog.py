@@ -28,5 +28,7 @@ def find_by_id(session, id):
 def find_by_name_and_breed(session, name, breed):
     return session.query(Dog).filter_by(name=name, breed=breed).first()
 
-def update(session, dog):
+def update_breed(session, dog, breed):
+    dog.breed = breed
     session.commit()
+    return session
