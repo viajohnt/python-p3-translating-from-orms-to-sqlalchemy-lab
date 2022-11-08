@@ -75,7 +75,7 @@ class TestDog:
         fanny = find_by_name_and_breed(TestDog.session, 'fanny', 'cockapoo')
         assert(fanny.name == 'fanny' and fanny.breed == 'cockapoo')
     
-    def test_updates_record(self):
+    def test_updates_breed(self):
         '''contains function "update_breed()" that takes a session instance, and breed as arguments and updates the instance's breed.'''
         joey = TestDog.session.query(Dog).filter_by(name='joey').first()
         update_breed(TestDog.session, joey, 'bulldog')
