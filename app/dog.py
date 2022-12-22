@@ -13,8 +13,8 @@ def save(session, dog):
     session.commit()
     return session
 
-def new_from_db(session):
-    return session.query(Dog).first()
+def new_from_db(session, row):
+    return session.query(Dog).filter_by(id = row.id).first()
 
 def get_all(session):
     return [dog for dog in session.query(Dog)]
