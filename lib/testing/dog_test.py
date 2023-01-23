@@ -14,7 +14,7 @@ from dog import (
 from models import Base, Dog
 
 class TestModels:
-    '''app/models.py'''
+    '''lib/models.py'''
 
     def test_has_name_and_breed_attributes(self):
         '''contains model "Dog" with name and breed attributes.'''
@@ -22,7 +22,7 @@ class TestModels:
         assert(dog.name == "joey" and dog.breed == "cocker spaniel")
 
 class TestDog:
-    '''app/dog.py'''
+    '''lib/dog.py'''
 
 
     def test_creates_table(self):
